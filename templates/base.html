@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<div class="bg-dark text-white text-center card-body w-100">
+		<h1>Text Generator : "El amor en los tiempos de cólera" </h1>
+	</div>
+
+	<div class="text-center bg-secondary card-body w-100">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+</body>
+</html>

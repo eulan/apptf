@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Text Generator {% endblock %}
+{% block content %}
+<form action="#" method="post">
+	<p>Para generar texto se debe agregar una palabra y el generador hará el resto.</p>
+	<p><input type="text" name="string" placeholder="Gabriel García Márquez"></p>
+	<p>Dame cuantos carácteres quieres</p>
+	<p><input type="text" name="NumChar" placeholder="1000"></p>
+	<p><input type="submit" name="submit"></p>
+</form>
+
+<h4>Texto generado</h4>
+<p class="border border-dark rounded bg-light d-flex justify-content-center" >{{content}}</p>
+
+{% endblock %}
